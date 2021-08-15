@@ -130,20 +130,28 @@ font-weight: 600;
     list-style: none;
     line-height: 25px;
 }
-.compe li .percent{
+.skill .box{
     position: relative;
-    height: 6px;
     width: 100%;
-    background-color:gray;
-    display: block;
-    margin-top: 12px;
-    
-    
+    display: grid;
+    grid-template-columns: 150px 5fr;
+    justify-content: center;
+    align-items: center;
 }
-.compe li .percent div{
+.skill .box h4{
+    font-weight: 500;
+    color: #003147;
+    text-transform: uppercase;
+}
+.skill .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background:gray;
+}
+.skill .box .percent div{
     position: absolute;
-    top: 0;
-    left: 0;
+  
     height: 100%;
     background-color:#003147;
 
@@ -152,4 +160,16 @@ font-weight: 600;
     line-height: 15px;
     margin-right: 15px;
 }
+.pro li{
+    line-height: 200%;
+    font-weight: 600;
+}
 
+/*responsive*/
+
+@media screem and (max-width:700px){
+    .rigth-side{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
